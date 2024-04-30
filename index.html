@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <section>
+        <h1 class="efeito">Calculadora</h1>
+        <div id="resultado"></div>
+        <div>
+            <!--<button class="clear">AC</button>
+            <button onclick="insert('(')" class="sinal">( )</button>
+            <button onclick="insert('%')" class="sinal">%</button>
+            <button onclick="insert('÷')" class="sinal">÷</button>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('*')" class="sinal">x</button>
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('-')" class="sinal">-</button>
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button onclick="insert('+')" class="sinal">+</button>
+            <button onclick="insert('7')">,</button>
+            <button onclick="insert('0')">0</button>
+            <button>«</button>
+            <button onclick="insert('=')" class="igual">=</button>-->
+        </div>
+        <table class="botoes">
+            <tr>
+                <td><button class="clear" onclick="clean()">AC</button></td>
+                <td><button class="sinal" onclick="insert('%')">%</button></td>
+                <td><button class=" sinal" onclick="insert('/')">÷</button></td>
+                <td><button class="sinal"onclick="insert('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('7')">7</button></td>
+                <td><button onclick="insert('8')">8</button></td>
+                <td><button onclick="insert('9')">9</button></td>
+                <td><button class="sinal" onclick="insert('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('4')">4</button></td>
+                <td><button onclick="insert('5')">5</button></td>
+                <td><button onclick="insert('6')">6</button></td>
+                <td rowspan="2"><button style="height: 150px; border-radius: 10px;" class="sinal" onclick="insert('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert('1')">1</button></td>
+                <td><button onclick="insert('2')">2</button></td>
+                <td><button onclick="insert('3')">3</button></td>
+            <tr>
+                <td><button onclick="insert('.')">.</button></td>
+                <td><button onclick="insert('0')">0</button></td>
+                <td><button onclick="back()">«</button></td>
+                <td><button class="igual" onclick="calcular()">=</button></td>
+            </tr>
+        </table>
+    </section>
+    <script src="./src/script.js"></script>
+</body>
+</html>
